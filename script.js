@@ -11,3 +11,7 @@ const btnClicked = (event) => {
     console.log(event.target.id)
 }
 
+family.addEventListener("click", btnClicked);
+nsfw.addEventListener("click", btnClicked);
+water.addEventListener("click", btnClicked);
+tupperware.addEventListener("click", btnClicked);
