@@ -9,6 +9,28 @@ const response = document.getElementById("response");
 
 const btnClicked = (event) => {
     console.log(event.target.id)
+
+    // response.innerHTML = my_input.value;
+
+    switch(event.target.id) {
+        case "family": 
+            response.innerHTML = "Gotta love em";
+            my_input.value = "";
+            break;
+        case "nsfw":
+            response.innerHTML = "Edited to be family friendly";
+            my_input.value = "";
+            break;
+        case "water":
+            response.innerHTML = "Stay thirsty my friends";
+            my_input.value = "";
+            break;
+        case "tupperware":
+            response.innerHTML = "Thanks mom";
+            my_input.value = "";
+            break;
+
+    }
 }
 
 family.addEventListener("click", btnClicked);
